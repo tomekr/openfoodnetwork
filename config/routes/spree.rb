@@ -56,11 +56,34 @@ Spree::Core::Engine.routes.prepend do
     get '/search/customers' => 'search#customers', :as => :search_customers
 
     resources :products do
-      get :group_buy_options, on: :member
-      get :seo, on: :member
-
       post :bulk_update, :on => :collection, :as => :bulk_update
+
+      member do
+        get :clone
+        get :group_buy_options
+        get :seo
+      end
+
+      resources :product_properties do
+        collection do
+          post :update_positions
+        end
+      end
+
+      resources :images do
+        collection do
+          post :update_positions
+        end
+      end
+
+      resources :variants do
+        collection do
+          post :update_positions
+        end
+      end
     end
+
+    get '/variants/search', :to => "variants#search", :as => :search_variants
 
     resources :orders do
       member do
@@ -139,30 +162,7 @@ Spree::Core::Engine.routes.prepend do
     put :cancel, on: :member
   end
 
-  resources :products do
-    resources :product_properties do
-      collection do
-        post :update_positions
-      end
-    end
-    resources :images do
-      collection do
-        post :update_positions
-      end
-    end
-
-    member do
-      get :clone
-    end
-
-    resources :variants do
-      collection do
-        post :update_positions
-      end
-    end
-  end
-
-  get '/variants/search', :to => "variants#search", :as => :search_variants
+  resources :products
 
   # Used by spree_paypal_express
   get '/checkout/:state', :to => 'checkout#edit', :as => :checkout_state
