@@ -29,6 +29,7 @@
 //= require admin/handlebar_extensions
 //= require lodash.underscore.js
 //= require responsive-tables
+
 //= require admin/spree_paypal_express
 //= require angularjs-file-upload
 //= require ../shared/ng-infinite-scroll.min.js
@@ -43,6 +44,8 @@
 
 // OFN specific
 //= require_tree ../templates/admin
+
+// OFN specific dependencies
 //= require ./admin_ofn
 //= require ./customers/customers
 //= require ./dropdown/dropdown
