@@ -129,7 +129,6 @@ Naming/PredicateName:
 Naming/UncommunicativeMethodParamName:
   Exclude:
     - 'app/helpers/spree/admin/base_helper_decorator.rb'
-    - 'app/helpers/spree/base_helper_decorator.rb'
     - 'app/services/subscription_validator.rb'
     - 'lib/open_food_network/reports/bulk_coop_report.rb'
     - 'lib/open_food_network/xero_invoices_report.rb'
@@ -190,6 +189,7 @@ Rails/OutputSafety:
     - 'app/controllers/spree/admin/reports_controller.rb'
     - 'app/helpers/angular_form_helper.rb'
     - 'app/helpers/spree/admin/base_helper.rb'
+    - 'app/helpers/spree/admin/zones_helper.rb'
     - 'app/helpers/spree/reports_helper.rb'
     - 'app/helpers/spree/admin/orders_helper.rb'
     - 'app/helpers/spree/admin/navigation_helper.rb'
