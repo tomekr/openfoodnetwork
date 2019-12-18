@@ -5,6 +5,7 @@
 // the compiled file.
 //
 
+// jquery and angular
 //= require jquery
 //= require jquery-migrate-min
 //= require jquery_ujs
@@ -23,10 +24,16 @@
 //= require jquery.adaptivemenu
 //= require equalize
 //= require admin/spree_paypal_express
+//= require angularjs-file-upload
 //= require ../shared/ng-infinite-scroll.min.js
 //= require ../shared/ng-tags-input.min.js
-//= require moment
 //= require angular-rails-templates
+
+// spree
+//= require admin/spree_backend
+//= require admin/spree_paypal_express
+
+// OFN specific
 //= require_tree ../templates/admin
 //= require ./admin_ofn
 //= require ./customers/customers
@@ -52,6 +59,8 @@
 //= require ./utils/utils
 //= require ./users/users
 //= require ./variant_overrides/variant_overrides
+
+// text, dates and translations
 //= require textAngular-rangy.min.js
 //= require textAngular-sanitize.min.js
 //= require textAngular.min.js
@@ -67,7 +76,9 @@
 //= require moment/pt-br.js
 //= require moment/pt.js
 //= require moment/sv.js
-//= require ../shared/mm-foundation-tpls-0.9.0-20180826174721.min.js
-//= require angularjs-file-upload
 
+// foundation
+//= require ../shared/mm-foundation-tpls-0.9.0-20180826174721.min.js
+
+// requires the rest of the JS code in this folder
 //= require_tree .
