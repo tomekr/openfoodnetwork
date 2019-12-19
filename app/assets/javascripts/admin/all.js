@@ -20,6 +20,7 @@
 //= require jquery.vAlign
 //= require jquery.horizontalNav
 //= require spin
+//= require equalize
 //= require admin/spree_paypal_express
 //= require ../shared/ng-infinite-scroll.min.js
 //= require ../shared/ng-tags-input.min.js
