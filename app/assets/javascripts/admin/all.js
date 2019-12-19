@@ -27,6 +27,7 @@
 //= require jquery.cookie
 //= require jquery.jstree/jquery.jstree
 //= require admin/handlebar_extensions
+//= require lodash.underscore.js
 //= require admin/spree_paypal_express
 //= require angularjs-file-upload
 //= require ../shared/ng-infinite-scroll.min.js
