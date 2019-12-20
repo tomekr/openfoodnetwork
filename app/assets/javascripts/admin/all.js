@@ -16,7 +16,6 @@
 //= require angular-animate
 //= require angular-sanitize
 //= require admin/spree_backend
-//= require admin/spree-select2
 //= require spree
 //= require jquery.vAlign
 //= require jquery.horizontalNav
